@@ -12,6 +12,7 @@ body{
 }
 .header{
   margin-bottom: var(--space-20)
+
 }
 .navigation-bar{
   overflow: hidden;
@@ -22,12 +23,11 @@ body{
   top: 0;
   z-index: 999;
 }
-.navigation-bar ul{
+.navigation-links{
   display: flex;
   justify-content: flex-end;
   column-gap: var(--space-8);
-  padding: var(--space-4) var(--space-10);
-  
+  padding: var(--space-6) var(--space-8);
 }
 ul li{
   list-style: none;
@@ -59,6 +59,27 @@ li .nav-btn-cta{
   padding: var(--space-2) var(--space-6);
   border-radius: var(--radius-full);
   font-weight: 600;
+  transition: ease-out .3s;
+}
+.nav-btn-cta:hover{
+  background-color: var(--shadow-grey-clr);
+  border: var(--border-width-thin) solid var(--complementary-clr);
+  transition: var(--transition-base);
+}
+.nav-btn-cta:active{
+  background-color: var(--complementary-clr);
+  transition: var(--transition-fast);
+}
+#toggle-menu{
+  display: none;
+}
+.menu-bars{
+  display: none;
+  color: var(--complementary-clr);
+  border: 1px solid var(--complementary-clr);
+  width: 28px;
+  margin-bottom: var(--space-2);
+  cursor: pointer;
 }
 .introduction-section{
   display: flex;
@@ -102,7 +123,8 @@ li .nav-btn-cta{
   margin-inline: 0 var(--space-24);
   width: calc(35rem + 5rem);
   text-align: justify; /* align text vertically*/
-  line-height: var(--line-height-relaxed); /* Here this property gave space for line bottom within of each paragraph*/
+  line-height: var(--line-height-relaxed); 
+  /* Here this property gave space for line bottom within of each paragraph*/
   opacity: 70%;
 }
 .content .description-bio span{
