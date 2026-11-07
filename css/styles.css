@@ -47,11 +47,18 @@ ul li a{
   color: var(--complementary-clr);
   transition: var(--transition-slow)
 }
-ul li a:hover:not(.logo-name){
+ul li a:hover:not(.nav-logo-name, .nav-btn-cta){
   color: var(--font-porcelain-clr);
   border-bottom: var(--border-width-thin) solid var(--complementary-clr);
   padding-block-end: var(--space-1);
   opacity: 80%;
+}
+li .nav-btn-cta{
+  color: var(--font-porcelain-clr);
+  background-color: var(--complementary-clr);
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-full);
+  font-weight: 600;
 }
 .introduction-section{
   display: flex;
