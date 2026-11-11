@@ -23,9 +23,11 @@ body{
   top: 0;
   z-index: 999;
 }
+.right-nav{
+  display: flex;
+}
 .navigation-links{
   display: flex;
-  justify-content: flex-end;
   column-gap: var(--space-8);
   padding: var(--space-6) var(--space-8);
 }
@@ -71,15 +73,14 @@ li .nav-btn-cta{
   transition: var(--transition-fast);
 }
 #toggle-menu{
-  display: none;
+  display: block;
 }
 .menu-bars{
-  display: none;
+  display: block;
   color: var(--complementary-clr);
   border: 1px solid var(--complementary-clr);
-  width: 28px;
+  width: 26px;
   margin-bottom: var(--space-2);
-  cursor: pointer;
 }
 .introduction-section{
   display: flex;
