@@ -15,30 +15,25 @@
     <link rel="stylesheet" href="css/mobile-design.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="navigation-bar desktop-design mobile-design">
+    <header class="container">
+      <nav class="navbar">
+          <div><a class="logo" href="#logo">Mark D.</a></div>
         
-
-          <div>
-            <input type="checkbox" name="toggle-menu-mobile" id="toggle-menu">
-            <label for="toggle-menu" class="bars-btn">
-              <span class="bars-1 menu-bars"></span>
-              <span class="bars-2 menu-bars"></span>
-              <span class="bars-3 menu-bars"></span>
+            <input type="checkbox" id="toggle-menu" class="menu-checked visualizedHidden">
+            <label for="toggle-menu" class="menu-bar">
+              <span class="menu-lines"></span>
             </label>
-           </div> 
-
-            <div>
+       
               <ul class="navigation-links">
-                <li><a class="nav-logo-name uppercase-text" href="#logo-name">Mark D.</a></li>
+                <li><a class="nav-about" href="#about">Home</a></li>
                 <li><a class="nav-about" href="#about">About</a></li>
                 <li><a class="nav-biography" href="#biography">Biography</a></li>
                 <li><a class="nav-gallery" href="#photo-gallery">Gallery</a></li>
-                <li><a class="nav-btn-cta bg-clr-red" href="#contact">Contact</a></li>
+                <li class="btn-contact">
+                  <a class="active" href="#contact">Contact</a>
+                </li>
               </ul>
-            </div>
 
-    
       </nav>
     </header>
     <main>

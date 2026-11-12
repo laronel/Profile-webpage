@@ -6,6 +6,7 @@
   --coffee-bean: hsl(278, 20%, 8%);
   --font-porcelain-clr: hsl(30, 100%, 99%); 
   --complementary-clr: hsl(354, 100%, 71%);
+  --complementary-opacity: hsl(354, 100%, 71%, 0.8);
 
   /* Topography */
 
